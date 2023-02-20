@@ -1,0 +1,6 @@
+@media only screen and (max-width:400px){
+    nav ul{
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+}

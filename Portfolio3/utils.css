@@ -1,0 +1,18 @@
+*{
+    margin: 0; padding: 0;
+    list-style-position: inside;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.red{
+    color: red;
+}
+.relative{
+    position: relative;
+}

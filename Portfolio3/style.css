@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=PT+Sans&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #000;
+    color: white;
+    font-family: Karla;
+}
+
+section {
+    margin: 3vh auto;
+    padding: 20px;
+}
+
+div {
+    margin: 10px;
+    padding: 15px;
+}
+
+h1 {
+    font-weight: 700;
+    display: inline-block;
+    margin: auto 10px;
+    padding: 20px;
+    font-size: 2em;
+    font-variant: small-caps;
+}
+
+h1::first-letter {
+    color: rgb(0, 255, 157);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+p {
+    font-size: 1.1em;
+    margin: 3px auto;
+    padding: 3px;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    color: rgb(0, 255, 157);
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+button{
+    padding: 2px 5px;
+    margin: 15px auto 0;
+    background: rgb(41, 4, 249);
+    color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+/* Navbar */
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #000000c9;
+    z-index: 1;
+}
+nav h1{
+    margin: 0 10px;
+}
+nav a {
+    padding: 10px 5px 5px;
+    margin: 20px;
+    overflow: hidden;
+}
+nav a#hireMe{
+    background-color: rgb(0, 255, 157);
+    color: #000;
+    padding: 10px;
+}
+nav a#hireMe:hover{
+    
+    border: none;
+}
+
+a:hover {
+    color: rgb(0, 255, 157);
+    border-bottom: 2px solid white;
+    position: relative;
+    bottom:  3px;
+}
+
+main, header {
+    padding: 10px;
+}
+main{
+    z-index: 0;
+}
+
+#header-image {
+    width: 39vw;
+}
+
+
+/* Header */
+section#header{
+    justify-content: space-around;
+    width: 100%;
+    background: #000;
+    /* z-index: -1; */
+    position: fixed;
+}
+
+/* About */
+section#about{
+    margin-top: 110vh;
+}
+section.details {
+    background: rgba(36, 36, 36, 0.96);
+    width: 87vw;
+    align-items: flex-start;
+}
+
+section#about img {
+    width: 25vw;
+}
+
+section#about ul {
+    justify-content: left;
+}
+
+section#about ul a {
+    margin: 10px 10% 10px 0;
+}
+
+div.div-in {
+    margin: 25px 0;
+    padding: 0;
+}
+
+div ul{
+    margin-top: 10px;
+}
+
+ul#tabs a::after{
+    color: red;
+}
+
+
+
+/* Projects Section */
+section#projects{
+overflow: auto;
+}
+
+div.cards{
+    background: #312d2d;
+}
+div.cards img{
+    width: 100%;
+}
+
+
+
+/* Contact */
+form input, form textarea{
+    margin: 5px;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    background: #000;
+    color: rgb(163, 159, 159);
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+form div.flex{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input#submit:hover{
+    background: rgb(0, 255, 157);
+    color: black;
+    transition: all 200ms ease-in-out;
+}
+
+
+@keyframes jumping{
+    0%{
+      top: -3px;
+    }
+    50%{
+      top:3px;
+    }
+    100%{
+        top:-3px
+    }
+}
+
+#jump{
+    animation: jumping 1s ease 0 infinite alternate;
+}
